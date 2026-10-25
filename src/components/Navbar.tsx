@@ -20,15 +20,15 @@ export default function Navbar() {
     };
 
   return (
-    <div className="text-white flex justify-between items-center px-8 py-4 border border-zinc-800 bg-[#09090b]">
+    <div className="text-white flex justify-between items-center px-4 py-4 border border-zinc-800 bg-[#09090b] fixed right-0 left-0 top-0 z-50">
       <a
         href="#"
-        className="font-geist-mono text-xl md:text-2xl font-black border border-zinc-800 bg-zinc-950 rounded-lg px-4 py-2"
+        className="font-geist-mono text-xl md:text-2xl font-black border border-zinc-800 bg-zinc-800 rounded-lg px-4 py-2"
       >
         E
       </a>
 
-      <nav className="hidden md:flex justify-center items-center gap-6 md:gap-8 font-medium text-xl font-geist">
+      <nav className="hidden md:flex justify-center items-center gap-6 font-medium text-lg font-geist md:mx-6">
         {navLinks.map((link) => (
           <a
             key={link.name}
@@ -58,7 +58,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={toggleNavbar}
-              className="hover:text-slate-300 transition-colors duration-200 ease-in font-geist font-medium text-base"
+              className="hover:text-slate-300 active:text-slate-400 transition-colors duration-200 ease-in font-geist font-medium text-base"
             >
               {link.name}
             </a>
