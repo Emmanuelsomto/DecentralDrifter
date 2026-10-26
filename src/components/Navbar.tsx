@@ -15,15 +15,15 @@ const navLinks: navLink[] = [
 ];
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-    const toggleNavbar = () => {
-      setIsOpen(!isOpen);
-    };
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className="text-white flex justify-between items-center px-4 py-4 border border-zinc-800 bg-[#09090b] fixed right-0 left-0 top-0 z-50">
       <a
         href="#"
-        className="font-geist-mono text-xl md:text-2xl font-black border border-zinc-800 bg-zinc-800 rounded-lg px-4 py-2"
+        className="font-geist-mono text-xl md:text-2xl font-black border border-zinc-800 bg-zinc-900 rounded-lg px-4 py-2"
       >
         E
       </a>

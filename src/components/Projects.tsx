@@ -46,11 +46,15 @@ const projects: Project[] = [
 export default function Projects() {
   return (
     <div id="#projects" className="mx-4">
-      <section className="mt-10 md:mt-16 md:mx-24 mb-10 flex flex-col justify-start items-start md:justify-center md:items-center md:text-center gap-4">
-        <h2 className="font-geist font-medium text-lg text-slate-200 md:text-xl">
-          # PROJECTS
-        </h2>
-        <p className="font-geist-mono font-medium tracking-tighter text-xs md:text-sm  text-slate-400">
+      <section className="mt-10 md:mt-16 mb-10 flex flex-col justify-start items-start md:justify-center md:items-center md:text-center gap-4">
+        <div className="flex flex-col gap-3 md:gap-6 mb-4 w-full">
+          <h2 className="font-geist font-medium text-lg text-slate-200 md:text-2xl tracking-wide">
+            PROJECTS
+          </h2>
+          <div className="border border-b border-slate-800"></div>
+        </div>
+
+        <p className="font-geist-mono font-medium tracking-tighter text-xs md:text-sm md:mx-24 leading-relaxed text-slate-400">
           These are applications I've designed, built, and deployed from
           scratch. No canned templates-just React, TypeScript, and clean code.
           Scroll through, inspect the live apps, or dive directly into source
@@ -58,11 +62,11 @@ export default function Projects() {
         </p>
       </section>
 
-      <div className="flex flex-col md:flex-row gap-1.5 md:gap-4 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
         {projects.map((project: Project, index: number) => (
           <div
             key={index}
-            className="border border-black bg-zinc-800/50 rounded-2xl mt-8"
+            className="border border-black bg-zinc-800/50 rounded-2xl"
           >
             <div className="aspect-auto">
               <img
@@ -95,17 +99,18 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold font-geist flex flex-row gap-2 justify-center items-center"
+                    className="font-semiboldbold font-geist flex flex-row gap-1 justify-center items-center"
                   >
                     <FaGithub /> GitHub
                   </a>
                 </button>
 
-                <button className="border border-zinc-800 bg-zinc-700 text-white px-4 py-2 cursor-pointer rounded-lg hover:bg-zinc-600 active:bg-zinc-500 duration-300 transition-colors ease-in">
+                <button className="border border-zinc-800 bg-zinc-700 text-white text-base px-4 py-2 cursor-pointer rounded-lg hover:bg-zinc-600 active:bg-zinc-500 duration-300 transition-colors ease-in">
                   <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="font-geist-mono font-semiboldbold"
                   >
                     Live &#129133;
                   </a>
