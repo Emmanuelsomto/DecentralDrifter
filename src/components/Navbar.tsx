@@ -10,8 +10,8 @@ interface navLink {
 const navLinks: navLink[] = [
   { name: "Projects", href: "#projects" },
   { name: "Stack", href: "#stack" },
-  { name: "Background", href: "#background" },
   { name: "Contact", href: "#contact" },
+  { name: "Background", href: "#background" },
 ];
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

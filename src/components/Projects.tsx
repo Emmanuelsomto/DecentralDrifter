@@ -45,16 +45,16 @@ const projects: Project[] = [
 ];
 export default function Projects() {
   return (
-    <div id="#projects" className="mx-4">
+    <div id="projects" className="mx-4">
       <section className="mt-10 md:mt-16 mb-10 flex flex-col justify-start items-start md:justify-center md:items-center md:text-center gap-4">
-        <div className="flex flex-col gap-3 md:gap-6 mb-4 w-full">
-          <h2 className="font-geist font-medium text-lg text-slate-200 md:text-2xl tracking-wide">
+        <div className="flex flex-col gap-3 md:gap-6 mb-1 w-full">
+          <h2 className="font-geist font-bold text-lg text-slate-200 md:text-2xl tracking-wide">
             PROJECTS
           </h2>
           <div className="border border-b border-slate-800"></div>
         </div>
 
-        <p className="font-geist-mono font-medium tracking-tighter text-xs md:text-sm md:mx-24 leading-relaxed text-slate-400">
+        <p className="font-geist-mono font-medium tracking-tighter text-xs md:text-lg md:mx-24 leading-relaxed text-slate-400 md:mb-4">
           These are applications I've designed, built, and deployed from
           scratch. No canned templates-just React, TypeScript, and clean code.
           Scroll through, inspect the live apps, or dive directly into source
@@ -62,7 +62,7 @@ export default function Projects() {
         </p>
       </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 md:mb-16">
         {projects.map((project: Project, index: number) => (
           <div
             key={index}
@@ -77,7 +77,7 @@ export default function Projects() {
               />
             </div>
 
-            <section className="flex flex-col  gap-4 mx-4 mt-8 mb-10">
+            <section className="flex flex-col gap-4 mx-4 mt-8 mb-10">
               <h3 className="font-geist font-bold text-xl text-slate-200">
                 {project.title}
               </h3>
@@ -93,7 +93,7 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="flex flex-row gap-4 mt-3">
+              <div className="flex flex-row gap-2 mt-3">
                 <button className="border border-slate-400 text-base text-slate-900 bg-white px-4 py-2 md:py-3 cursor-pointer rounded-lg hover:bg-slate-200 active:bg-slate-100 duration-300 transition-colors ease-in">
                   <a
                     href={project.github}
