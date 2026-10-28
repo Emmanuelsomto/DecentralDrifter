@@ -39,7 +39,7 @@ export default function Stack() {
   return (
     <div id="stack" className="flex flex-col mx-6 mt-8 md:mt-16 gap-4 justify-start items-start md:justify-center md:items-center md:text-center text-white">
       <section className="flex flex-col gap-3 md:gap-4 w-full mb-1">
-        <h2 className="font-geist font-bold text-lg text-slate-200 md:text-2xl tracking-wide">
+        <h2 className="font-geist font-bold text-xl text-slate-200 md:text-3xl tracking-wide">
           Technical Stack & Tools
         </h2>
         <div className="border border-b border-slate-800"></div>

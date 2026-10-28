@@ -30,7 +30,7 @@ export default function Contact() {
         </p>
       </section>
 
-      <section className="flex flex-col justify-start items-start md:justify-center md:items-center md:text-center gap-2 md:gap-4 mb-10">
+      <section className="flex flex-col justify-start items-start md:justify-center md:items-center md:text-center gap-2 md:gap-4 mb-6 md:mb-10">
         <div className="flex flex-row gap-3 items-center">
           <span className="font-geist font-semibold text-base md:text-lg text-slate-200">
             Email:
@@ -48,7 +48,7 @@ export default function Contact() {
 
         <div className="flex flex-row gap-3 items-center">
           <span className="font-geist font-semibold text-base md:text-lg text-slate-200">
-            X (formerly Twitter):
+            X (Twitter):
           </span>
           <a
             href={`https://x.com/${accountInfo.twitter}`}

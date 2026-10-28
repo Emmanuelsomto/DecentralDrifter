@@ -2,6 +2,7 @@ import anivaultImg from "../assets/AniVault.png";
 import devpulseImg from "../assets/DevPulse.png";
 import openboomImg from "../assets/OpenBoom.png";
 import { FaGithub } from "react-icons/fa6";
+import { FiArrowUpRight } from "react-icons/fi";
 
 interface Project {
   title: string;
@@ -48,13 +49,13 @@ export default function Projects() {
     <div id="projects" className="mx-4">
       <section className="mt-10 md:mt-16 mb-10 flex flex-col justify-start items-start md:justify-center md:items-center md:text-center gap-4">
         <div className="flex flex-col gap-3 md:gap-6 mb-1 w-full">
-          <h2 className="font-geist font-bold text-lg text-slate-200 md:text-2xl tracking-wide">
+          <h2 className="font-geist font-bold text-xl text-slate-200 md:text-3xl tracking-wide">
             PROJECTS
           </h2>
           <div className="border border-b border-slate-800"></div>
         </div>
 
-        <p className="font-geist-mono font-medium tracking-tighter text-xs md:text-lg md:mx-24 leading-relaxed text-slate-400 md:mb-4">
+        <p className="font-geist-mono font-medium tracking-tighter text-sm md:text-lg md:mx-24 leading-relaxed text-slate-400 md:mb-4">
           These are applications I've designed, built, and deployed from
           scratch. No canned templates-just React, TypeScript, and clean code.
           Scroll through, inspect the live apps, or dive directly into source
@@ -99,20 +100,23 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-semiboldbold font-geist flex flex-row gap-1 justify-center items-center"
+                    className="font-semibold font-geist flex flex-row gap-1 justify-center items-center"
                   >
                     <FaGithub /> GitHub
                   </a>
                 </button>
 
-                <button className="border border-zinc-800 bg-zinc-700 text-white text-base px-4 py-2 cursor-pointer rounded-lg hover:bg-zinc-600 active:bg-zinc-500 duration-300 transition-colors ease-in">
+                <button className="border border-zinc-800 bg-zinc-700 text-white text-base px-4 py-3 cursor-pointer rounded-lg hover:bg-zinc-600 active:bg-zinc-500 duration-300 transition-colors ease-in">
                   <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-geist-mono font-semiboldbold"
+                    className="font-geist-mono font-semibold flex flex-row justify-center items-center gap-1.5"
                   >
-                    Live &#129133;
+                    Live
+                    <span>
+                      <FiArrowUpRight className="w-5 h-5"/>
+                    </span>
                   </a>
                 </button>
               </div>
